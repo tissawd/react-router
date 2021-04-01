@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Link, Route } from 'react-router-dom';
+import Home from './components/Home'
 
 function App() {
   return (
@@ -13,6 +14,11 @@ function App() {
           <Link to="/checkout">Checkout</Link>
         </nav>
       </header>
+      <main className="main-display">
+        <Route exact path="/home">
+          <Home />
+        </Route>
+      </main>
     </div>
   );
 }
