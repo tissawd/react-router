@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { Link, Route } from 'react-router-dom';
-import Home from './components/Home'
+import Home from './components/Home';
+import Products from './components/Products';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       <main className="main-display">
         <Route exact path="/home">
           <Home />
+        </Route>
+        <Route exact path="/products">
+          <Products />
         </Route>
       </main>
     </div>
