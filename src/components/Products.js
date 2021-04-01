@@ -9,7 +9,6 @@ const Products = () => {
   for (let i = 0; i < 16; i++){
     products.push({productName: faker.commerce.productName(), productPhoto: faker.random.image()})
   }
-  console.log(products);
   return(
     <div className="products">
       {products.map(product => {
